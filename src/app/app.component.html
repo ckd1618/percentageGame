@@ -1,0 +1,37 @@
+
+<div>{{scrollCount}} / 9</div>
+<div>+ {{bonusAtk}} Atk</div>
+<div>+ {{bonusDex}} Dex</div>
+
+
+<br />
+<button (click)="clear()">
+  Clear
+</button>
+<br />
+<button (click)="try10()">
+  10% success
+</button>
+<span> 10's used: {{x10sUsed}}</span>
+<br />
+<button (click)="try30()">
+  30% success
+</button>
+<span> 30's used: {{x30sUsed}}</span>
+<br />
+<button (click)="try10()">
+  10% success
+</button>
+<br />
+<button (click)="try10()">
+  10% success
+</button>
+<br />
+<button (click)="try10()">
+  10% success
+</button>
+<div>Item Count: {{itemCount}}</div>
+<button (click)="resetAll()">
+  Reset All
+</button>
+<div *ngIf="itemDestroyed">Destroyed</div>
